@@ -1,4 +1,4 @@
-const correctPassword = "KS_TS_EVER_INN_LOVE_NL"; // Set your password here
+const correctPassword = "KS_TS_EVER_IN_LOVE_NL"; // Set your password here
 
 function checkPassword() {
   const input = document.getElementById("passwordInput").value;

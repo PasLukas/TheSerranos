@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Gift</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div id="passwordSection">
+      <h2>Enter the Password:</h2>
+      <input type="password" id="passwordInput" />
+      <button onclick="checkPassword()">Submit</button>
+      <p id="error" class="error"></p>
+    </div>
+
+    <div id="giftSection" class="hidden">
+      <h2>🎁 Your Special Wedding Gift 🎁</h2>
+      <p>We love you and wish you all the happiness in the world!</p>
+      <img src="gift.jpg" alt="Your Wedding Gift"/>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

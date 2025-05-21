@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background: #fefefe;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+input {
+  padding: 8px;
+  font-size: 1em;
+}
+button {
+  padding: 8px 16px;
+  margin-left: 10px;
+}
+img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+.error {
+  color: red;
+}

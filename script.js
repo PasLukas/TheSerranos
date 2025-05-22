@@ -1,4 +1,4 @@
-const correctPassword = "AUF_EUCH_UND_AB_IN_DIE_NIEDERLANDE"; // Set your password here
+const correctPassword = "APEN_IN_NL"; // Set your password here
 
 function checkPassword() {
   const input = document.getElementById("passwordInput").value;

@@ -1,4 +1,4 @@
-const correctPassword = "married2025";
+const correctPassword = "APEN_IN_NL";
 
 function checkPassword() {
   const input = document.getElementById("passwordInput").value;

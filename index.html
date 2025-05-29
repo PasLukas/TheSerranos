@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wedding Gift</title>
   <link rel="stylesheet" href="style.css"/>
-  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
   <div class="container">
@@ -15,7 +14,7 @@
       <button onclick="checkPassword()">Absenden</button>
       <p id="error" class="error"></p>
     </div>
-
+    
     <div id="giftSection" class="hidden">
       <h2>🎁 Euer Hochzeitsgeschenk 🎁</h2>
       <p>Glückwunsch!</p>
@@ -28,9 +27,11 @@
       <div id="balloonContainer"></div>
     </div>
 
-    <div id="musicPlayer" class="hidden">
-      <div id="ytplayer"></div>
-    </div>
+    <!-- Lokaler Musik-Player -->
+    <audio id="bgMusic" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Dein Browser unterstützt keine Audio-Wiedergabe.
+    </audio>
   </div>
 
   <script src="script.js"></script>

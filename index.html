@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wedding Gift</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
   <div class="container">
     <div id="passwordSection">
-      <h2>Enter the Password:</h2>
+      <h2>Gib das Passwort ein:</h2>
       <input type="password" id="passwordInput" />
-      <button onclick="checkPassword()">Submit</button>
+      <button onclick="checkPassword()">Absenden</button>
       <p id="error" class="error"></p>
     </div>
 
     <div id="giftSection" class="hidden">
-      <h2>🎁 Your Special Wedding Gift 🎁</h2>
-      <p>We love you and wish you all the happiness in the world!</p>
-      <img src="gift.jpg" alt="Your Wedding Gift"/>
+      <h2>🎁 Euer Hochzeitsgeschenk 🎁</h2>
+      <p>Glückwunsch!</p>
+      <p>Zum lösen aller Rätsel und natürlich zu eurer Hochzeit.</p>
+      <p>Als Geschenk wollen wir euch herzlich auf einen Trip in die Niederlande mit Übernachtung einladen. Zusätzlich wollen wir einen Trip ins Apenheul machen – der größte Zoo voller freilaufender Affen in Europa!</p>
+      <p>Einen passenden Termin finden wir dann alle gemeinsam.</p>
+      <p>Wir freuen uns schon wieder gemeinsam einen schönen Ausflug zu machen. Aber erstmal wünschen wir euch einen perfekten Start in eure Ehe.</p>
+      <p>Grüße,<br/>Pascal, Janice, Dennis & Annika</p>
+      <img src="gift.jpg" alt="Euer Geschenk"/>
+      <div id="balloonContainer"></div>
+    </div>
+
+    <div id="musicPlayer" class="hidden">
+      <iframe width="0" height="0" src="https://www.youtube.com/embed/Yc-7IQqcqeM?autoplay=1&loop=1&playlist=Yc-7IQqcqeM" frameborder="0" allow="autoplay"></iframe>
     </div>
   </div>
 

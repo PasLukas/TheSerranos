@@ -1,5 +1,4 @@
 const correctPassword = "APEN_IN_NL";
-let player;
 
 function checkPassword() {
   const input = document.getElementById("passwordInput").value;
@@ -8,8 +7,6 @@ function checkPassword() {
   if (input === correctPassword) {
     document.getElementById("passwordSection").style.display = "none";
     document.getElementById("giftSection").classList.remove("hidden");
-    document.getElementById("musicPlayer").classList.remove("hidden");
-
     launchBalloons();
     playMusic();
   } else {
@@ -29,21 +26,11 @@ function launchBalloons() {
   }
 }
 
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('ytplayer', {
-    height: '0',
-    width: '0',
-    videoId: 'Yc-7IQqcqeM',
-    playerVars: {
-      'autoplay': 0,
-      'loop': 1,
-      'playlist': 'Yc-7IQqcqeM'
-    }
-  });
-}
-
 function playMusic() {
-  if (player && player.playVideo) {
-    player.playVideo();
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.play().catch((e) => {
+      console.log("Autoplay verhindert – der Nutzer muss evtl. einmal klicken.");
+    });
   }
 }
